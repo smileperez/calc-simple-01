@@ -1,0 +1,17 @@
+/* global */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+.form {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-label, .form-input {
+    display: block;
+    width: 100%;
+}
