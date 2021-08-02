@@ -8,19 +8,21 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        
+        <nav>
+            <h1>Калькулятор процентов</h1>
+        </nav>
         <div class="main-form">
             <form class="form" action="">
                 <label class="form-label" for="">Первоначальная сумма
-                    <input class="form-input" required></input>
+                    <input type="number" class="form-input" id="firstSum" required></input>
                 </label>
                 <label class="form-label" for="">Ставка в % годовых
-                    <input class="form-input" required></input>
+                    <input type="number" class="form-input" id="interestRate" required></input>
                 </label>
                 <label class="form-label" for="">Срок кредита (дней)
-                    <input class="form-input" required></input>
+                    <input type="number" class="form-input" id="creditTerm" required></input>
                 </label>
-                <button>Посчитать</button>
+                <input type="submit" id="button">
 
                 <label class="form-label" for="">Сумма к окончанию срока
                     <input class="form-input"></input>
