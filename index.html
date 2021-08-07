@@ -9,26 +9,26 @@
     </head>
     <body>
         <nav>
-            <h1>Калькулятор процентов</h1>
+            <h1>Калькулятор процентов вклада</h1>
         </nav>
         <div class="main-form">
             <form class="form" action="">
-                <label class="form-label" for="">Первоначальная сумма
-                    <input type="number" class="form-input" id="firstSum" required></input>
+                <label class="form-label" for="">Сумма вклада
+                    <input placeholder="50000" type="number" class="form-input" id="sum" required></input>
                 </label>
                 <label class="form-label" for="">Ставка в % годовых
-                    <input type="number" class="form-input" id="interestRate" required></input>
+                    <input type="number" class="form-input" id="percent" step="any" required></input>
                 </label>
-                <label class="form-label" for="">Срок кредита (дней)
-                    <input type="number" class="form-input" id="creditTerm" required></input>
+                <label class="form-label" for="">Срок вклада (дней)
+                    <input type="number" class="form-input" id="term" required></input>
                 </label>
-                <input type="submit" id="button">
+                <button onclick="main()" type="button">Посчитать</button>
 
                 <label class="form-label" for="">Сумма к окончанию срока
-                    <input class="form-input"></input>
+                    <input class="form-input" id="resultSum"></input>
                 </label>
                 <label class="form-label" for="">Доход
-                    <input class="form-input"></input>
+                    <input class="form-input" id="income"></input>
                 </label>
             </form>
         </div>

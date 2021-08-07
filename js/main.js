@@ -1,16 +1,23 @@
-let = firstSum;
-let = interestRate;
-let = creditTerm;
+function main() {
+    let sum = window.sum.value;
+    let percent = window.percent.value;
+    let term = window.term.value;
 
-document.getElementById("button").onclick = getData(firstSum, interestRate, creditTerm);
+    let result = calculate(sum, percent, term);
 
-function getData (a, b, c) {
-    a = document.getElementById("firstSum").value;
-    b = document.getElementById("interestRate").value;
-    c = document.getElementById("creditTerm").value;
+    console.log(result.income, result.resultSum);
 
-    console.log(a, b, c);
-    return(a,b,c);
+    window.resultSum.value = result.resultSum;
+    window.income.value = result.income;
 }
 
-console.log(firstSum, interestRate, creditTerm);
+function calculate(sum, percent, term) {
+    let income;
+    let resultSum;
+    let daysInYear = 365;
+
+    income = sum * percent * term / daysInYear / 100;
+    resultSum = Number(sum) + income;
+
+    return { resultSum:resultSum.toFixed(2), income:income.toFixed(2) };
+}
