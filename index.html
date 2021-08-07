@@ -8,31 +8,40 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <nav>
-            <h1>Калькулятор процентов вклада</h1>
+        <!-- шапка страницы -->
+        <nav class="nav">
+            <h1 class="app-class">Калькулятор </h1>
+            <h2 class="app-title">Простые проценты вклада</h2>
         </nav>
-        <div class="main-form">
-            <form class="form" action="">
-                <label class="form-label" for="">Сумма вклада
-                    <input placeholder="50000" type="number" class="form-input" id="sum" required></input>
-                </label>
-                <label class="form-label" for="">Ставка в % годовых
-                    <input type="number" class="form-input" id="percent" step="any" required></input>
-                </label>
-                <label class="form-label" for="">Срок вклада (дней)
-                    <input type="number" class="form-input" id="term" required></input>
-                </label>
-                <button onclick="main()" type="button">Посчитать</button>
 
-                <label class="form-label" for="">Сумма к окончанию срока
+        <!-- основной контент -->
+        <div class="main">
+            <form class="form" action="">
+                <label class="form-label" for="">Введите сумму вклада:
+                    <input placeholder="Сумма" type="number" class="form-input" id="sum" required></input>
+                </label>
+                <label class="form-label" for="">Введите ставку % годовых:
+                    <input placeholder="Ставка" type="number" class="form-input" id="percent" step="any" required></input>
+                </label>
+                <label class="form-label" for="">Введите срок вклада (дней):
+                    <input placeholder="Срок" type="number" class="form-input" id="term" required></input>
+                </label>
+                <button onclick="main()" class="form-button" type="button">Посчитать</button>
+
+                <label class="form-label" for="">Сумма к окончанию срока:
                     <input class="form-input" id="resultSum"></input>
                 </label>
-                <label class="form-label" for="">Доход
+                <label class="form-label" for="">Доход:
                     <input class="form-input" id="income"></input>
                 </label>
             </form>
         </div>
 
+        <!-- подвал страницы -->
+        <footer>
+        </footer>
+
+        <!-- скрипты -->
         <script src="js/main.js"></script>
     </body>
 </html>

@@ -1,12 +1,31 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
 /* global */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
-    background: linear-gradient(-45deg, #f802c3, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-	animation: gradient 60s ease infinite;
+    background-color: rgb(157, 166, 182);
+}
+
+.nav {
+    text-align: center;
+}
+
+.app-class {
+    margin: 1rem 0 0 0;
+    font-weight: 600;
+}
+
+.app-title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
 .form {
@@ -15,9 +34,30 @@ body {
     margin-right: auto;
 }
 
-.form-label, .form-input {
+.form-label, .form-input, .form-button  {
     display: block;
     width: 100%;
+    margin-top: .8rem;
+}
+
+.form-input, .form-button {
+    height: 2rem;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form-input {
+    padding-left: 7px;
+}
+
+.form-button {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+	animation: gradient 2s ease infinite;
+    color: black;
+    font-weight: 600;
+    font-size: 1.3rem;
 }
 
 @keyframes gradient {
